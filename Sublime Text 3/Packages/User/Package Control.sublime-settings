@@ -1,0 +1,45 @@
+{
+	"bootstrapped": true,
+	"debug": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"All Autocomplete",
+		"AutoFileName",
+		"Better Completion",
+		"BracketHighlighter",
+		"Clickable URLs",
+		"Color Highlighter",
+		"ColorPicker",
+		"Compare Side-By-Side",
+		"CSScomb",
+		"CTags",
+		"DocBlockr",
+		"Emmet",
+		"HTML-CSS-JS Prettify",
+		"LESS",
+		"LiveReload",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"OmniMarkupPreviewer",
+		"Package Control",
+		"Sass",
+		"SASS Build",
+		"Seti_UI",
+		"SideBarFolders",
+		"SublimeGit",
+		"sublimelint",
+		"SublimeLinter",
+		"SublimeLinter-contrib-sublime-syntax",
+		"SublimeLinter-jshint",
+		"SublimeREPL",
+		"SublimeTmpl",
+		"Table Editor",
+		"Terminal",
+		"Themr"
+	]
+}

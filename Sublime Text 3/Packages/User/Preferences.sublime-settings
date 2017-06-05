@@ -1,0 +1,22 @@
+{
+	"afn_valid_scopes":
+	[
+		"string",
+		"css",
+		"sass",
+		"less",
+		"scss"
+	],
+	"auto_find_in_selection": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"font_size": 12,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+	],
+	"line_numbers": true,
+	"overlay_scroll_bars": false,
+	"show_tab_close_buttons": false,
+	"theme": "Seti_orig.sublime-theme",
+	"word_wrap": true
+}
