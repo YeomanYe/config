@@ -1,0 +1,25 @@
+colorscheme molokai
+set nospell
+set wrap
+set number
+"colorscheme solarized
+
+" nerdtree_tabs_config
+let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_focus_on_files=1
+let g:nerdtree_tabs_startup_cd=1
+let g:nerdtree_tabs_open_on_gui_startup=1
+let g:nerdtree_tabs_smart_startup_focus=1
+let g:nerdtree_tabs_open_on_new_tab=1
+let NERDTreeQuitOnOpen=0
+"autocmd VimEnter * Tagbar
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
