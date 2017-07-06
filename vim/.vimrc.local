@@ -23,3 +23,13 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" 使用wildmode补全模式
+set wildmenu
+set wildmode=full
+
+" 使用%%代替%:h<Tab>
+cnoremap <expr> %% getcmdtype( ) == ':' ? expand('%:h').'/' : '%%'
+
+" 进入粘贴状态设置
+set pastetoggle=<f5>
