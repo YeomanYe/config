@@ -43,3 +43,12 @@ function! s:VSetSearch()
     let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
     let @s = temp
 endfunction
+
+" markdown-preview.vim插件配置
+" F8打开预览窗口，F9关闭预览窗口
+nmap <silent> <F8> <Plug>MarkdownPreview        " 普通模式
+imap <silent> <F8> <Plug>MarkdownPreview        " 插入模式
+nmap <silent> <F9> <Plug>StopMarkdownPreview    " 普通模式
+imap <silent> <F9> <Plug>StopMarkdownPreview    " 插入模式
+" 配置启动MarkdownPreview的浏览器为chrome
+let g:mkdp_path_to_chrome = "chromium"
