@@ -24,8 +24,40 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+
+" 使用wildmode补全模式
+set wildmenu
+set wildmode=full
+
+" 使用%%代替%:h<Tab>
+cnoremap <expr> %% getcmdtype( ) == ':' ? expand('%:h').'/' : '%%'
+
+" 进入粘贴状态设置
+set pastetoggle=<f5>
+
+" 可视化选择内容查找，×正向，#反向
+xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>
+xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
+function! s:VSetSearch()
+    let temp = @s
+    norm! gv"sy
+    let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
+    let @s = temp
+endfunction
+
+" markdown-preview.vim插件配置
+" F8打开预览窗口，F9关闭预览窗口
+nmap <silent> <F8> <Plug>MarkdownPreview        " 普通模式
+imap <silent> <F8> <Plug>MarkdownPreview        " 插入模式
+nmap <silent> <F9> <Plug>StopMarkdownPreview    " 普通模式
+imap <silent> <F9> <Plug>StopMarkdownPreview    " 插入模式
+" 配置启动MarkdownPreview的浏览器为chrome
+let g:mkdp_path_to_chrome = "chromium"
+
+
+" gvim设置
 " gvim设置字体和大小
-set guifont=黑体:h14
+set guifont=楷体:h14
 " gvim窗口启动位置设置
 winpos 100 0
 " gvim窗口启动大小设置

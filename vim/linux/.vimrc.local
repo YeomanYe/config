@@ -14,7 +14,7 @@ let g:nerdtree_tabs_open_on_new_tab=1
 let NERDTreeQuitOnOpen=0
 "autocmd VimEnter * Tagbar
 
-" syntastic
+" syntastic语法检查控件
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
