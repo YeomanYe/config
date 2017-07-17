@@ -24,7 +24,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-
 " 使用wildmode补全模式
 set wildmenu
 set wildmode=full
@@ -54,10 +53,19 @@ imap <silent> <F9> <Plug>StopMarkdownPreview    " 插入模式
 " 配置启动MarkdownPreview的浏览器为chrome
 let g:mkdp_path_to_chrome = "chromium"
 
+" 将工程中查找到包含字符串的文件使用命令Qargs放入到参数列表中
+command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
+function! QuickfixFilenames()
+    let buffer_numbers = {}
+    for quickfix_item in getqflist()
+        let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+    endfor
+    return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
+endfunction
 
 " gvim设置
 " gvim设置字体和大小
-set guifont=楷体:h14
+" set guifont=黑体:h14
 " gvim窗口启动位置设置
 winpos 100 0
 " gvim窗口启动大小设置
