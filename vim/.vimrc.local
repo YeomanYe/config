@@ -65,7 +65,7 @@ endfunction
 
 " gvim设置
 " gvim设置字体和大小
-" set guifont=黑体:h14
+set guifont=黑体:h14
 " gvim窗口启动位置设置
 winpos 100 0
 " gvim窗口启动大小设置
@@ -74,3 +74,15 @@ set lines=35 columns=110
 if executable("vimtweak.dll") 
     autocmd guienter * call libcallnr("vimtweak","SetAlpha",222) 
 endif 
+
+
+" 启动gvim自动最大化
+if has('win32')    
+    au GUIEnter * simalt ~x
+else    
+	au GUIEnter * call MaximizeWindow()
+endif 
+
+function! MaximizeWindow()    
+	silent !wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
+endfunction
