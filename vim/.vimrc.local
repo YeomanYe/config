@@ -65,6 +65,10 @@ function! QuickfixFilenames()
     return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
 endfunction
 
+" markdown-toc 插件配置
+let g:vmt_dont_insert_fence = 1
+let g:vmt_cycle_list_item_markers = 1
+
 " gvim设置
 " gvim设置字体和大小
 set guifont=黑体:h14
@@ -88,3 +92,27 @@ endif
 function! MaximizeWindow()    
 	silent !wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
 endfunction
+
+"在tagbar中添加markdown支持
+"let g:tagbar_type_markdown = {
+    "\ 'ctagstype': 'mkd',
+    "\ 'ctagsbin' : '~/.vim/markdown2ctags.py',
+    "\ 'ctagsargs' : '-f - --sort=yes',
+    "\ 'kinds' : [
+        "\ 's:sections',
+        "\ 'i:images'
+    "\ ],
+    "\ 'sro' : '|',
+    "\ 'kind2scope' : {
+        "\ 's' : 'section',
+    "\ },
+    "\ 'sort': 0,
+"\ }
+
+let g:tagbar_type_markdown = {
+        \ 'ctagstype' : 'markdown',
+        \ 'kinds' : [
+                \ 'h:headings',
+        \ ],
+    \ 'sort' : 0
+\ }
