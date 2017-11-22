@@ -17,45 +17,29 @@
 
 ## Install
 
-### Via Package Control
-
 Theme is listed as [Seti_UI](https://packagecontrol.io/packages/Seti_UI) on Will Bond's [Sublime Package Control](https://packagecontrol.io).
-
-### Manual
-
-1. [Download the .zip](https://github.com/ctf0/Seti_ST3/archive/master.zip).
-2. Unzip and rename the folder to `Seti_UI`.
-3. Copy the folder into `Packages` directory, which you can find using the menu item `Preferences -> Browse Packages...` in Sublime Text.
-4. copy the (Resource/fold.png) "or edit it to ur liking" to `Packages/Theme - Default` to override the default code folding icon.
 
 ## Setup
 
-Activate the `Theme` by modifying your user preferences file, which you can find using the menu item `Preferences -> Settings - User` in Sublime Text or use [Schemr](https://packagecontrol.io/packages/Schemr) & [Themr](https://packagecontrol.io/packages/Themr) by **Ben Weier**.
-
-### Example settings
-
-```json
-{
-    "theme": "Seti_orig.sublime-theme"
-}
-```
+Activate the `Theme` by calling `UI: Select Theme` from Sublime Text quick menu.
 
 #### Options
 
-`Themr` have an option call ``Themr: Toggle Theme Settings`` to change theme settings on-the-fly , or manually add what you need from below.
+open your Sublime Text "user settings" and add what you need from below.
 * note that not all the settings are available in both themes.
 
 ```js
 // tabs
-  "Seti_tabs_small"                // tabs height = 35
-  "Seti_tabs_med"                  // tabs height = 40
-  "Seti_tabs_big"                  // tabs height = 54
-  "Seti_tabs_no_min_width"         // (issues/223)
-  "Seti_tab_font_12"               // tab font size = 12
-  "mouse_wheel_tabswitch"          // scroll through opened tabs
-  "Seti_no_scroll_icons"           // remove the l/r arrows, effective when ("enable_tab_scrolling": true)
-  "Seti_no_under_bar"              // remove the small colored bar under the un-saved tabs "not available with accents"
-  "Seti_bold_slctdtab_labels"      // make active tab label font in bold
+  "Seti_tabs_small"                   // tabs height = 35
+  "Seti_tabs_med"                     // tabs height = 40
+  "Seti_tabs_big"                     // tabs height = 54
+  "Seti_tabs_no_min_width"            // (issues/223)
+  "Seti_tab_font_12"                  // tab font size = 12
+  "mouse_wheel_tabswitch"             // scroll through opened tabs
+  "Seti_no_scroll_icons"              // remove the l/r arrows, effective when ("enable_tab_scrolling": true)
+  "Seti_no_under_bar"                 // remove the small colored bar under the un-saved tabs "not available with accents"
+  "Seti_bold_slctdtab_labels"         // make active tab label font in bold
+  "Seti_use_system_title_bar"         // use the new tabset feature (>=3127)
 
 // tabs unsaved bar ("Seti_accent_*": false)
   "Seti_yellow_tab"
@@ -96,10 +80,14 @@ Activate the `Theme` by modifying your user preferences file, which you can find
   "Seti_seablue_scrollbar"
 
 // sidebar
+  // icons
   "Seti_ClosedFolder_same"         // same icon as the "Opened folder"
   "Seti_ClosedFolder_remove"       // remove closed_folder icon
   "Seti_ClosedFolder_dots"         // change closed_folder icon to dot
   "Seti_ClosedFolder_anim"         // animate sidebar folder icons
+  "Seti_sb_no_icons"               // (issues/133)
+  "Seti_sb_blank"                  // (issues/133)
+  // padding
   "Seti_sb_small_padding"          // sidebar entries padding = 3
   "Seti_sb_big_padding"            // sidebar entries padding = 10
   "Seti_sb_tree_med"               // sidebar tree padding = 15
@@ -107,8 +95,7 @@ Activate the `Theme` by modifying your user preferences file, which you can find
   "Seti_sb_tree_tiny"              // (issues/88)
   "Seti_sb_tree_miny"              // (issues/88)
   "Seti_show_group_arrows"         // show the folder/group arrows in sidebar
-  "Seti_sb_no_icons"               // (issues/133)
-  "Seti_sb_blank"                  // (issues/133)
+  // labels
   "Seti_bold_slctdfile_labels"     // make the sidebar selected file text in bold
   "Seti_sidebar_font_size_12"      // (issues/115)
   "Seti_sidebar_font_size_13"      // (issues/115)
@@ -118,6 +105,7 @@ Activate the `Theme` by modifying your user preferences file, which you can find
   "Seti_sidebar_font_Hack"         // (issues/115)
   "Seti_sidebar_font_Source"       // (issues/115)
   "Seti_heading_font_12"           // heading font size = 12
+  // heading
   "Seti_bold_heading"              // make heading font in bold
   "Seti_no_heading"                // remove the "folder,group 1,etc.."
   "Seti_top_heading_big"           // sidebar top header img big
@@ -160,21 +148,7 @@ Activate the `Theme` by modifying your user preferences file, which you can find
   "Seti_accent_seablue"
 ```
 
-## Credits
-
-* Ported based on `Glacier` by [joeyfigaro](https://github.com/joeyfigaro/glacier-theme) among many others.
-* Special thanx for [Anthony Garand](https://github.com/garand) for the widget files (took me 2 days to understand what they actually do :unamused: and fix the god dame text input thing).
-* `ScopeHunter` by [facelessuser](https://github.com/facelessuser) "YOU ROCK".
-* `ColorSchemeEditor` by [Borislav Peev](https://github.com/bobef) "HOF".
-* `Cyanide` by [lefoy](https://github.com/lefoy/cyanide-theme) "HOF".
-
 ## Differences from the original
 
 * No file icon in the opened tabs, ST lacks this.
 * Current line number highlight color, ST lacks this.
-
-## Issue A Ticket
-
-1. What version of ST are you using? (nothing lower than 3103).
-2. Have you restarted ST after you installed the theme?
-3. If you still have bad render, have you removed the cache folder (found right next to the packages folder)?

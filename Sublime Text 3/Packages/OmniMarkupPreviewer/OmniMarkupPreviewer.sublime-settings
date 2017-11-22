@@ -1,7 +1,7 @@
 /* OmniMarkupPreviewer default setting, DO NOT MODIFY */
 {
-    "server_host": "127.0.0.1",
-    "server_port": 51003,
+    "server_host": "localhost",
+    "server_port": 51000,
     "refresh_on_modified": true,
     // delay after modified, in milliseconds
     "refresh_on_modified_delay": 500,

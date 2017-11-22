@@ -4,24 +4,27 @@
 		"debug": false,
 		"delay": 0.25,
 		"error_color": "D02000",
-		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Knob/symbol/Knob - symbol.gutter-theme",
 		"gutter_theme_excludes":
 		[
 		],
 		"lint_mode": "background",
 		"linters":
 		{
-			"jshint":
+			"csslint":
 			{
 				"@disable": false,
 				"args":
 				[
 				],
+				"errors": "",
 				"excludes":
 				[
-				]
+				],
+				"ignore": "",
+				"warnings": ""
 			},
-			"sublimesyntax":
+			"eslint":
 			{
 				"@disable": true,
 				"args":
@@ -30,6 +33,49 @@
 				"excludes":
 				[
 				]
+			},
+			"htmlhint":
+			{
+				"@disable": true,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"jshint":
+			{
+				"@disable": true,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"jsxhint":
+			{
+				"@disable": true,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
+			"pep8":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				],
+				"ignore": "",
+				"max-line-length": null,
+				"select": ""
 			}
 		},
 		"mark_style": "outline",
@@ -37,6 +83,9 @@
 		"passive_warnings": false,
 		"paths":
 		{
+			"*":
+			[
+			],
 			"linux":
 			[
 			],
@@ -63,16 +112,38 @@
 		"shell_timeout": 10,
 		"show_errors_on_save": false,
 		"show_marks_in_minimap": true,
+		"sublimelinter_executable_map":
+		{
+		},
 		"syntax_map":
 		{
-			"html (django)": "html",
-			"html (rails)": "html",
-			"html 5": "html",
-			"javascript (babel)": "javascript",
-			"magicpython": "python",
+			"coffeescript (gulpfile)": "coffeescript",
+			"javascript (eslint)": "javascript",
+			"javascript (gruntfile)": "javascript",
+			"javascript (gulpfile)": "javascript",
+			"javascript (postcss)": "javascript",
+			"javascript (stylelint)": "javascript",
+			"javascript (webpack)": "javascript",
+			"json (babel)": "json",
+			"json (bower)": "json",
+			"json (composer)": "json",
+			"json (eslint)": "json",
+			"json (npm)": "json",
+			"json (postcss)": "json",
+			"json (settings)": "json",
+			"json (stylelint)": "json",
+			"json (sublime)": "json",
+			"json (tern js)": "json",
 			"php": "html",
-			"python django": "python",
-			"pythonimproved": "python"
+			"xml (config)": "xml",
+			"xml (svg)": "xml",
+			"yaml (circleci)": "yaml",
+			"yaml (docker)": "yaml",
+			"yaml (eslint)": "yaml",
+			"yaml (lock)": "yaml",
+			"yaml (procfile)": "yaml",
+			"yaml (stylelint)": "yaml",
+			"yaml (yarn)": "yaml"
 		},
 		"tooltip_fontsize": "1rem",
 		"tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",

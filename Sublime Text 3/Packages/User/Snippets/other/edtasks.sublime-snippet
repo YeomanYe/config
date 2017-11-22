@@ -2,24 +2,22 @@
 	<content><![CDATA[
 感兴趣:
   □ 模拟器
-  □ 五子棋AI
-  □ SpringMVC框架
-  □ Bootstrap框架
+  □ 了解网站
+  □ 自动提醒插件
 很重要-很紧急:
+  □ 阅读书籍20页
+  □ 读一篇官方文档
 很重要-不紧急:
-  □ 阅读一些笔记
-  □ 画一点思维导图
   □ 重构一些代码
   □ 读一篇文章
-  □ 学一点前端
-  □ 学一点基础
   □ 写一些新的代码
-  □ 找一种效率提高的方法  
+  □ 找个有趣的程序或方法
 不重要-很紧急:
 不重要-不紧急:
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>edtasks</tabTrigger>
+  <description>每日任务</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
