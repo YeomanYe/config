@@ -32,5 +32,8 @@
         ]
     },
     { "keys": ["ctrl+shift+."], "command": "expand_selection"},
-    { "keys": ["ctrl+alt+'"], "command": "alignment" }
+    { "keys": ["ctrl+alt+'"], "command": "alignment" },
+    { "keys": ["ctrl+shift+alt+i"], "command": "keep", "args": { "keep": "ours" } },
+    { "keys": ["ctrl+shift+alt+u"], "command": "keep", "args": { "keep": "theirs" } },
+    { "keys": ["ctrl+shift+alt+n"], "command": "list_conflict_files" }
 ]
