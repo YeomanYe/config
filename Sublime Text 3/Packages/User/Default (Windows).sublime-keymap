@@ -11,6 +11,8 @@
 	{ "keys": ["alt+left"], "command": "jump_back" },
 	{ "keys": ["alt+right"], "command": "jump_forward" },
     {"keys": ["ctrl+shift+f"],"command": "htmlprettify"},
+    { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
     {"keys":["alt+ctrl+0"],"command":"example"},
     { "keys": ["ctrl+alt+,"], "command": "advanced_new_file_new"},
     {

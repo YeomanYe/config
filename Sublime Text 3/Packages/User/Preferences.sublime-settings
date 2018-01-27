@@ -31,7 +31,6 @@
 		"LaTeX",
 		"LaTeX Equation Preview",
 		"Lisp",
-		"Lua",
 		"Makefile",
 		"Matlab",
 		"Objective-C",
@@ -58,7 +57,7 @@
 	"overlay_scroll_bars": false,
 	"show_tab_close_buttons": false,
 	"tab_size": 4,
-	"theme": "Glacier.sublime-theme",
+	"theme": "Material Monokai.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_wrap": true
 }
