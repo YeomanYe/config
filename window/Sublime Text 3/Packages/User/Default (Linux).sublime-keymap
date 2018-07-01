@@ -1,0 +1,13 @@
+[
+	{ "keys": ["ctrl+alt+0"], "command": "replace_all", "args": {"close_panel": true},
+		 "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+	},
+    { "keys": ["ctrl+alt+'"], "command": "open_url_under_cursor" },
+    { "keys": ["f1"], "command": "goto_definition" },
+    { "keys": ["ctrl+shift+d"], "command": "css_comb" },
+	
+	{ "keys": ["ctrl+shift+v"], "command": "clipboard_display" },
+	{ "keys": ["ctrl+alt+v"], "command": "clipboard_paste_previous" },
+	{ "keys": ["alt+left"], "command": "jump_back" },
+	{ "keys": ["alt+right"], "command": "jump_forward" },
+]

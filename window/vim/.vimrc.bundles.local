@@ -1,0 +1,9 @@
+" markdown预览插件，一打开文档就自动打开网址
+" Plugin 'suan/vim-instant-markdown'
+" markdown代码块高亮插件
+Plugin 'joker1007/vim-markdown-quote-syntax'
+" markdown预览插件
+Plugin 'iamcco/mathjax-support-for-mkdp'
+Plugin 'iamcco/markdown-preview.vim'
+Plugin 'jade.vim'
+Plugin 'mzlogin/vim-markdown-toc'

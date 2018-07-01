@@ -1,0 +1,11 @@
+{
+	"enable_count_chars": true,
+	"enable_count_lines": true,
+
+	"enable_count_pages": true,
+	"words_per_page": 300,
+	"page_count_mode_count_chars": true,
+
+	"enable_live_count": true,
+
+}
